@@ -1,4 +1,4 @@
-### Vancouver demographic analysis
+# Vancouver demographic analysis
 
 Analyzed minority migration in Vancouver over five years using Python.
 
