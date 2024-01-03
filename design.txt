@@ -1,0 +1,29 @@
+'''
+CS 5001 Milestone1
+Fall 2022
+Steven
+design.txt
+'''
+1)Data sets:
+I use the csv files from "Census Profile, 2016 Census" and "Census Profile, 2021 Census" at https://open.canada.ca/en/open-data.
+links:
+URL2016 = "https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/download-telecharger/current-actuelle.cfm?Lang=E&Geo1=CSD&Code1=5915022&Geo2=PR&Code2=01&B1=All&type=0&FILETYPE=CSV"
+URL2021 = "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger/current-actuelle.cfm?Lang=E&SearchText=vancouver&DGUIDlist=2021A00055915022&GENDERlist=1,2,3&STATISTIClist=1&HEADERlist=0&FILETYPE=CSV"
+
+2)Objects:
+I will read my data into Consus2016 object and Consus2021 object. In class Consus2016, it has minority_name,total_population,male_population,female_population as attributes. it is also same in class Consus2021.
+for class methods, both class has __str__ and __eq__.
+
+3)what analysis and how I store my result:
+I will analyze the population of each minority in Vancouver city in 2016 and compare them to the population in 2021. Then we can figure out the change of each minority in Vancouver from 2016 to 2021.
+I will store my result in a panda data frame. it has two output results. First data frame shows the counts of minority population change from 2016 to 2021 in Vancouver. Second data frame shows the percentage of minority population change from 2016 to 2021.
+Those two data frame both has same structure, which has Minority Name, Total, Male and Female as column headers.
+
+4）visualize
+I want to visualize the data frame I get. As to present it, I will use a bar chart. the x axis are the minority name, the y axis are the variation of population from 2016 to 2021.(counts or percentage)
+
+5)user interaction
+a. Find a specific minority data
+b. Sort the data in numerical order
+c. Choose to show the counts or percentage
+d. Choose to show total population or male population or female population
